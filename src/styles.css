@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #2f5bff; /* update if you want a different exact blue */
+}
+
+/* Reusable utilities */
+@layer utilities {
+  .container-x {
+    @apply max-w-[1100px] mx-auto px-5;
+  }
+  .section-y {
+    @apply py-16 md:py-24;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-primary-600 text-white px-6 py-3 text-sm font-semibold shadow-md hover:bg-primary-700 transition;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border border-primary-600 text-primary-700 px-6 py-3 text-sm font-semibold hover:bg-primary-50 transition;
+  }
+}
+
+/* Additional animations for orbit section */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Orbits with controllable durations and directions */
+@keyframes orbit {
+  to { transform: rotate(360deg); }
+}
+.animate-orbit-18 { animation: orbit 18s linear infinite; }
+.animate-orbit-24 { animation: orbit 24s linear infinite; }
+.animate-orbit-28 { animation: orbit 28s linear infinite; }
+.animate-orbit-34 { animation: orbit 34s linear infinite; }
+.animate-orbit-24-rev { animation: orbit 24s linear infinite reverse; }
+.animate-orbit-28-rev { animation: orbit 28s linear infinite reverse; }
+.animate-orbit-34-rev { animation: orbit 34s linear infinite reverse; }
+
+
