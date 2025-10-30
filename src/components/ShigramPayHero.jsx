@@ -13,15 +13,8 @@ export default function ShigramPayHero() {
       <nav className="flex items-center justify-between px-16 py-6">
 
         <div className="flex items-center gap-2">
-
-          <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-
-            <span className="text-white font-bold text-xl">S</span>
-
-          </div>
-
+          <img src="/logo.png" alt="ShigramPay" className="h-8 w-auto" />
           <span className="text-xl font-bold text-gray-800">SHIGRAMPAY</span>
-
         </div>
 
         

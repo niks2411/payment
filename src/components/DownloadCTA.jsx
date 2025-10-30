@@ -16,28 +16,28 @@ export default function DownloadCTA() {
         </div>
 
         {/* Right visuals with placeholders for images */}
-        <div className="relative min-h-[420px]">
+        <div className="relative min-h-[520px]">
           {/* phone image */}
-          <div className="absolute right-0 top-0 h-[440px] w-[220px] rounded-[36px] overflow-hidden">
+          <div className="absolute right-0 top-0 h-[520px] w-[360px] rounded-[36px] overflow-hidden">
             <img src="/phone.png" alt="Phone" className="h-full w-full object-contain" />
           </div>
 
           {/* floating card top-left */}
-          <div className="absolute -top-4 left-6 h-16 w-56 rounded-xl overflow-hidden">
+          <div className="absolute -top-10 left-2 h-20 w-72 rounded-xl overflow-hidden">
             <img src="/card-top-left.png" alt="User card" className="h-full w-full object-contain" />
           </div>
 
           {/* small blue square icons */}
-          <div className="absolute top-40 left-40 h-7 w-7 rounded-lg bg-primary-600 grid place-items-center text-white text-xs">↗</div>
-          <div className="absolute top-24 left-56 h-7 w-7 rounded-lg bg-primary-600/90 grid place-items-center text-white text-xs">✦</div>
+          {/* <div className="absolute top-56 left-60 h-8 w-8 rounded-lg bg-primary-600 grid place-items-center text-white text-xs">↗</div> */}
+          {/* <div className="absolute top-28 left-[19rem] h-8 w-8 rounded-lg bg-primary-600/90 grid place-items-center text-white text-xs">✦</div> */}
 
           {/* income pill top-right */}
-          <div className="absolute top-16 right-0 h-10 w-28 rounded-lg overflow-hidden">
+          <div className="absolute top-14 right-6 h-22 w-32 rounded-lg overflow-hidden">
             <img src="/pill.png" alt="Income" className="h-full w-full object-contain" />
           </div>
 
           {/* success banner bottom-left */}
-          <div className="absolute bottom-0 left-0 h-12 w-64 rounded-xl overflow-hidden">
+          <div className="absolute bottom-10 left-8 h-34 w-72 rounded-xl overflow-hidden">
             <img src="/success-banner.png" alt="Success" className="h-full w-full object-contain" />
           </div>
         </div>
