@@ -17,6 +17,9 @@ export default function OrbitalFeatures() {
             <h2 className="text-2xl font-semibold text-blue-600">Why Choose Us?</h2>
           </div>
 
+          {/* Center logo image */}
+          
+
           {/* Planet 1 - equal size (behind text) */}
             <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '18s' }}>
@@ -46,10 +49,8 @@ export default function OrbitalFeatures() {
           </div>
 
           {/* Center logo/icon - Higher z-index */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-white text-2xl font-bold">S</span>
-            </div>
+         <div className="absolute z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-16 w-16 rounded-full bg-white/60 backdrop-blur-sm grid place-items-center">
+            <img src="/logo2.png" alt="Logo" className="h-10 w-10 object-contain" />
           </div>
         </div>
 

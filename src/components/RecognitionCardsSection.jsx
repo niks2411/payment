@@ -5,9 +5,14 @@ export default function RecognitionCardsSection() {
     <section className="relative py-10">
       <div className="mx-auto max-w-[960px] px-5">
         {/* Section heading above cards */}
-        <h3 className="text-center text-[13px] text-slate-700 mb-6">
-          India's first <span className="font-bold text-blue-600">Facial Recognition Payment</span> App
-        </h3>
+        <div className="mx-auto max-w-[780px] h-10 mb-6 marquee flex items-center">
+          <div className="marquee-inner left-0">
+            <span className="inline-block leading-none py-1 text-[23px] text-slate-700 mr-10">India's first <span className="font-bold text-blue-600">Facial Recognition Payment</span> App</span>
+            <span className="inline-block leading-none py-1 text-[23px] text-slate-700 mr-10">India's first <span className="font-bold text-blue-600">Facial Recognition Payment</span> App</span>
+            <span className="inline-block leading-none py-1 text-[23px] text-slate-700 mr-10">India's first <span className="font-bold text-blue-600">Facial Recognition Payment</span> App</span>
+            <span className="inline-block leading-none py-1 text-[23px] text-slate-700 mr-10">India's first <span className="font-bold text-blue-600">Facial Recognition Payment</span> App</span>
+          </div>
+        </div>
 
         {/* Card 1: What is Shigrampay? */}
         <div className="relative w-full max-w-[780px] mx-auto">

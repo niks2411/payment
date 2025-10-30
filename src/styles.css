@@ -20,11 +20,23 @@
   .btn-outline {
     @apply inline-flex items-center justify-center rounded-full border border-primary-600 text-primary-700 px-6 py-3 text-sm font-semibold hover:bg-primary-50 transition;
   }
+  .marquee {
+    @apply overflow-hidden relative;
+  }
+  .marquee-inner {
+    @apply absolute whitespace-nowrap will-change-transform;
+    animation: marquee 14s linear infinite;
+  }
 }
 
 /* Additional animations for orbit section */
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* Orbits with controllable durations and directions */
