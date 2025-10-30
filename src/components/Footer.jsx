@@ -33,11 +33,19 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-slate-700 mb-3">Contact us</h4>
             <a href="mailto:support@shigrampay.com" className="text-sm text-primary-600 underline">support@shigrampay.com</a>
-            <div className="mt-4 flex items-center gap-3">
-              <a className="h-7 w-7 rounded-full bg-primary-600 text-white grid place-items-center text-xs" href="#">f</a>
-              <a className="h-7 w-7 rounded-full bg-primary-600 text-white grid place-items-center text-xs" href="#">ig</a>
-              <a className="h-7 w-7 rounded-full bg-primary-600 text-white grid place-items-center text-xs" href="#">x</a>
-              <a className="h-7 w-7 rounded-full bg-primary-600 text-white grid place-items-center text-xs" href="#">in</a>
+            <div className="mt-4 flex items-center gap-4">
+              <a href="#" aria-label="Facebook">
+                <img src="/facebook.png" alt="Facebook" className="h-6 w-6" />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img src="/instagram.png" alt="Instagram" className="h-6 w-6" />
+              </a>
+              <a href="#" aria-label="X">
+                <img src="/x.png" alt="X" className="h-6 w-6" />
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <img src="/linkedin.png" alt="LinkedIn" className="h-6 w-6" />
+              </a>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function RecognitionCardsSection() {
               <div className="md:w-3/5">
                 <p className="text-[11px] uppercase tracking-[0.12em] text-slate-500 mb-1">What is</p>
                 <h4 className="text-[22px] leading-7 font-extrabold text-blue-700">SHIGRAMPAY?</h4>
-                <ul className="mt-3 space-y-2 text-[13px] leading-6 text-slate-700 list-disc pl-5">
+                <ul className="mt-3 space-y-2 text-[13px] leading-6 text-slate-700 list-disc marker:text-blue-600 pl-5">
                   <li>ShigramPay offers a genuine hands‑free and device‑free payment journey.</li>
                   <li>Customers no longer need to worry about carrying a wallet, a physical card, or even their phone.</li>
                   <li>Our platform is a pure software solution.</li>
@@ -28,8 +28,9 @@ export default function RecognitionCardsSection() {
                 </ul>
               </div>
               <div className="md:w-2/5 flex flex-col items-center justify-start">
-                <div className="w-full h-64 rounded-lg flex items-center justify-center overflow-hidden">
+                <div className="relative w-full h-68 rounded-lg flex items-center justify-center overflow-hidden">
                   <img src="/image2.png" alt="India map with badge" className="h-full w-full object-contain" />
+                  <img src="/logo2.png" alt="center badge" className="absolute left-[105px] top-[134px] -translate-x-1/2 -translate-y-1/2 h-8 w-8 object-contain" />
                 </div>
                 <p className="mt-2 text-[12px] text-slate-700 text-center">
                   India's first <span className="font-semibold text-blue-600">Facial Recognition</span><br />Payment App
@@ -50,7 +51,7 @@ export default function RecognitionCardsSection() {
               <div className="md:w-full">
                 <p className="text-[11px] uppercase tracking-[0.12em] text-slate-500 mb-1">Benefits for</p>
                 <h4 className="text-[22px] leading-7 font-extrabold text-blue-700">MERCHANT</h4>
-                <ul className="mt-3 space-y-2 text-[13px] leading-6 text-slate-700 list-disc pl-5">
+                <ul className="mt-3 space-y-2 text-[13px] leading-6 text-slate-700 list-disc marker:text-blue-600 pl-5">
                   <li>Increased Efficiency & Sales</li>
                   <li>Reduced Transaction Failures</li>
                   <li>Enhanced Security</li>
@@ -74,7 +75,7 @@ export default function RecognitionCardsSection() {
               <div className="md:w-full">
                 <p className="text-[11px] uppercase tracking-[0.12em] text-slate-500 mb-1">Benefits for</p>
                 <h4 className="text-[22px] leading-7 font-extrabold text-blue-700">CUSTOMER</h4>
-                <ul className="mt-3 space-y-2 text-[13px] leading-6 text-slate-700 list-disc pl-5">
+                <ul className="mt-3 space-y-2 text-[13px] leading-6 text-slate-700 list-disc marker:text-blue-600 pl-5">
                   <li>Unmatched Convenience</li>
                   <li>Enhanced Speed</li>
                   <li>Superior Security</li>

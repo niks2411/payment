@@ -18,30 +18,30 @@ export default function OrbitalFeatures() {
           </div>
 
           {/* Planet 1 - equal size (behind text) */}
-          <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48">
+            <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '18s' }}>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-7 h-7 bg-blue-500 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-blue-500 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
             </div>
           </div>
 
           {/* Planet 2 - equal size */}
           <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '24s' }}>
-              <div className="absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 w-7 h-7 bg-yellow-400 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
+              <div className="absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-yellow-400 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
             </div>
           </div>
 
           {/* Planet 3 - equal size */}
           <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '28s', animationDirection: 'reverse' }}>
-              <div className="absolute -top-2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-7 h-7 bg-orange-500 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
+              <div className="absolute -top-2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-orange-500 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
             </div>
           </div>
 
           {/* Planet 4 - equal size */}
           <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '34s' }}>
-              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 translate-y-1/2 w-7 h-7 bg-yellow-500 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 translate-y-1/2 w-10 h-10 bg-yellow-500 rounded-full shadow-lg grid place-items-center text-white text-[10px]"></div>
             </div>
           </div>
 
