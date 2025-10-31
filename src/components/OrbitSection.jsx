@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function OrbitalFeatures() {
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-8">
-      <div className="max-w-4xl w-full">
+    <section className="bg-white section-y">
+      <div className="container-x">
         {/* Orbital System */}
-        <div className="relative w-full max-w-md mx-auto mb-12" style={{ height: '400px' }}>
+        <div className="relative w-full max-w-[620px] mx-auto mb-12" style={{ height: '420px' }}>
           {/* Orbit rings */}
           <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-gray-200 rounded-full"></div>
           <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-gray-200 rounded-full"></div>
@@ -13,7 +13,7 @@ export default function OrbitalFeatures() {
           <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 border border-gray-200 rounded-full"></div>
 
           {/* Title placed between 3rd and 4th rings; frosted background */}
-          <div className="absolute z-20 top-[85%] left-1/2 -translate-x-1/2 bg-white/40 backdrop-blur-sm px-3 py-1 rounded-full">
+          <div className="absolute z-20 top-[82%] left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur-sm px-4 py-1 rounded-full shadow-sm">
             <h2 className="text-2xl font-semibold text-blue-600">Why Choose Us?</h2>
           </div>
 
@@ -54,16 +54,13 @@ export default function OrbitalFeatures() {
           </div>
         </div>
 
-        {/* optional spacer below graphic */}
-        <div className="h-2"></div>
-
         {/* Description */}
-        <p className="text-gray-500 text-center text-sm max-w-2xl mx-auto mb-12 px-4 leading-relaxed">
+        <p className="text-gray-500 text-center text-sm max-w-3xl mx-auto mb-12 px-6 leading-relaxed">
           Streamline is a fast, light-weight partners platform that enables fast, connection-driven partnership creation for all users through a flexible, scalable, designed for both consumers and merchants, a complete platform.
         </p>
 
         {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-0">
           {/* Feature 1 */}
           <div className="flex flex-col items-center text-center">
             <div className="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center mb-3 shadow-md">
@@ -105,6 +102,6 @@ export default function OrbitalFeatures() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

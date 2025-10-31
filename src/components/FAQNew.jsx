@@ -32,7 +32,6 @@ function FAQSection() {
 
   return (
     <div style={{
-      minHeight: '100vh',
       background: 'white',
       position: 'relative',
       overflow: 'hidden',
@@ -65,9 +64,9 @@ function FAQSection() {
       <div style={{
         position: 'relative',
         zIndex: 10,
-        maxWidth: '640px',
+        maxWidth: '1100px',
         margin: '0 auto',
-        padding: '64px 20px'
+        padding: '64px 20px 80px'
       }}>
         <h1 style={{
           fontSize: '2.5rem',

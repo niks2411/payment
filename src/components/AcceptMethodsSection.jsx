@@ -20,14 +20,14 @@ export default function AcceptMethodsSection() {
         </div>
 
         {/* Right visuals - leave placeholders for images */}
-        <div className="relative">
+        <div className="relative flex justify-center md:justify-end">
           {/* main image (image3) */}
-          <div className="relative ml-auto h-80 w-[300px] rounded-2xl overflow-hidden">
+          <div className="relative h-60 w-[220px] sm:h-72 sm:w-[260px] md:h-80 md:w-[320px] rounded-2xl overflow-hidden">
             <img src="/image3.png" alt="Payments UI" className="h-full w-full object-contain" />
           </div>
 
           {/* overlapping smaller image (image4) */}
-          <div className="absolute -bottom-8 left-8 z-10 h-30 w-56 rounded-xl overflow-hidden">
+          <div className="absolute -bottom-8 left-8 sm:left-12 md:left-16 z-10 h-24 w-44 sm:h-28 sm:w-52 md:h-30 md:w-60 rounded-xl overflow-hidden">
             <img src="/image4.png" alt="Analytics UI" className="h-full w-full object-contain" />
           </div>
         </div>

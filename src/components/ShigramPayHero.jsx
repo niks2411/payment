@@ -6,20 +6,20 @@ export default function ShigramPayHero() {
 
   return (
 
-    <div className="min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-600">
+    <div className="min-h-[620px] md:min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-600">
 
       {/* Navigation */}
 
-      <nav className="flex items-center justify-between px-16 py-6">
+      <nav className="flex items-center justify-between px-6 md:px-16 py-6">
 
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="ShigramPay" className="h-10 w-auto" />
+          <img src="/logo.png" alt="ShigramPay" className="h-12 w-auto" />
       
         </div>
 
         
 
-        <div className="flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
 
           <a href="#" className="text-gray-800 font-medium">Home</a>
 
@@ -43,11 +43,11 @@ export default function ShigramPayHero() {
 
       {/* Hero Section */}
 
-      <div className="flex items-center justify-between px-16 pt-20 pb-32">
+      <div className="grid md:grid-cols-2 items-center gap-10 px-6 md:px-16 pt-10 md:pt-20 pb-16 md:pb-32">
 
         {/* Left Content */}
 
-        <div className="w-1/2 pr-12">
+        <div className="md:pr-12">
 
           <h1 className="text-6xl font-bold text-blue-600 leading-tight mb-8">
 
@@ -81,9 +81,9 @@ export default function ShigramPayHero() {
 
         {/* Right Image Area */}
 
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="flex items-center justify-center">
 
-          <div className="relative w-full h-96 flex items-center justify-center">
+          <div className="relative w-full max-w-xl h-64 md:h-96 flex items-center justify-center">
 
             {/* Hero illustration from public/image1.png */}
 
