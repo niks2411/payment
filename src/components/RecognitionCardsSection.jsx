@@ -31,7 +31,7 @@ export default function RecognitionCardsSection() {
   return (
     <section className="relative py-10">
       <div className="mx-auto w-full max-w-[1320px] xl:max-w-[1440px] px-4 md:px-6 lg:px-8">
-        <div className="mx-auto w-full max-w-[960px] h-10 mb-6 marquee flex items-center">
+        <div className="mx-auto w-full max-w-[1360px] h-10 mb-6 marquee flex items-center">
           <div className="marquee-inner left-0">{marqueeItems}</div>
         </div>
 
