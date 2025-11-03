@@ -23,9 +23,9 @@ export default function DownloadCTA() {
           </div>
 
           {/* floating card top-left */}
-          <div className="absolute -top-8 left-1/2 -translate-x-1/2 md:left-2 md:translate-x-0 h-16 w-56 sm:h-20 sm:w-72 rounded-xl overflow-hidden">
+          {/* <div className="absolute -top-8 left-1/2 -translate-x-1/2 md:left-2 md:translate-x-0 h-16 w-56 sm:h-20 sm:w-72 rounded-xl overflow-hidden">
             <img src="/card-top-left.png" alt="User card" className="h-full w-full object-contain" />
-          </div>
+          </div> */}
 
           {/* small blue square icons */}
           {/* <div className="absolute top-56 left-60 h-8 w-8 rounded-lg bg-primary-600 grid place-items-center text-white text-xs">↗</div> */}
