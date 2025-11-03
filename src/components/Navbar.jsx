@@ -16,7 +16,7 @@ export default function Navbar() {
       </nav>
 
       <div className="flex items-center gap-3">
-        <button className="hidden md:inline-flex btn-outline">Sign In</button>
+        {/* <button className="hidden md:inline-flex btn-outline">Sign In</button> */}
         <button className="btn-primary">Sign up</button>
       </div>
     </header>
