@@ -51,7 +51,7 @@ export default function RecognitionCardsSection() {
             <div className="lg:w-1/2 flex flex-col items-center justify-start">
               <div className="relative w-full h-[17rem] lg:h-[18rem] rounded-lg flex items-center justify-center overflow-hidden">
                 <img src="/image2.png" alt="India map with badge" className="h-full w-full object-contain" />
-                <img src="/logo2.png" alt="center badge" className="absolute left-[210px] top-[138px] -translate-x-1/2 -translate-y-1/2 h-8 w-8 object-contain" />
+                <img src="/logo2.png" alt="center badge" className="absolute left-[125px] top-[132px] lg:left-[215px] lg:top-[138px] -translate-x-1/2 -translate-y-1/2 h-6 w-6 lg:h-8 lg:w-8 object-contain" />
               </div>
               <p className="mt-2 text-[12px] text-slate-700 text-center">
                 India's first <span className="font-semibold text-blue-600">Facial Recognition</span>
