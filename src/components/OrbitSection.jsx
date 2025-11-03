@@ -7,10 +7,10 @@ export default function OrbitalFeatures() {
         {/* Orbital System */}
         <div className="relative w-full max-w-[620px] mx-auto mb-12" style={{ height: '420px' }}>
           {/* Orbit rings */}
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-gray-200 rounded-full"></div>
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-gray-200 rounded-full"></div>
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-gray-200 rounded-full"></div>
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 border border-gray-200 rounded-full"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border border-blue-400/90"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full border border-blue-400/80"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full border border-blue-400/70"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full border border-blue-400/60"></div>
 
           {/* Title placed between 3rd and 4th rings; frosted background */}
           <div className="absolute z-20 top-[82%] left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur-sm px-4 py-1 rounded-full shadow-sm">

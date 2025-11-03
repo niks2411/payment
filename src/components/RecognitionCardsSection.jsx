@@ -65,18 +65,28 @@ export default function RecognitionCardsSection() {
         <InfoCard className="mt-24 mb-24" maxWidth="max-w-[1200px]">
           <div className="pointer-events-none absolute -z-10 -top-6 -right-4 w-[300px] h-[190px] rounded-[120px] bg-blue-500/45 blur-xl" />
           <div className="pointer-events-none absolute -z-10 -bottom-6 -left-4 w-[320px] h-[200px] rounded-[120px] bg-blue-600/45 blur-xl" />
-          <div className="flex flex-col gap-8">
-            <CardHeading title="MERCHANT" subtitle="Benefits for" />
-            <BulletList items={merchantBenefits} />
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            <div className="lg:w-1/2">
+              <CardHeading title="MERCHANT" subtitle="Benefits for" />
+              <BulletList items={merchantBenefits} />
+            </div>
+            <div className="lg:w-1/2 flex items-center justify-center">
+              <img src="/image5.png" alt="Merchant benefits illustration" className="h-[16rem] w-full object-contain" />
+            </div>
           </div>
         </InfoCard>
 
         <InfoCard className="mt-24" maxWidth="max-w-[1200px]">
           <div className="pointer-events-none absolute -z-10 -top-6 -left-4 w-[320px] h-[200px] rounded-[120px] bg-blue-500/50 blur-xl" />
           <div className="pointer-events-none absolute -z-10 -bottom-6 -right-4 w-[300px] h-[190px] rounded-[120px] bg-blue-600/45 blur-xl" />
-          <div className="flex flex-col gap-8">
-            <CardHeading title="CUSTOMER" subtitle="Benefits for" />
-            <BulletList items={customerBenefits} />
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            <div className="lg:w-1/2">
+              <CardHeading title="CUSTOMER" subtitle="Benefits for" />
+              <BulletList items={customerBenefits} />
+            </div>
+            <div className="lg:w-1/2 flex items-center justify-center">
+              <img src="/image6.png" alt="Customer benefits illustration" className="h-[16rem] w-full object-contain" />
+            </div>
           </div>
         </InfoCard>
       </div>
@@ -87,7 +97,7 @@ export default function RecognitionCardsSection() {
 function InfoCard({ children, className = '', maxWidth = 'max-w-[960px]' }) {
   return (
     <div className={`relative w-full ${maxWidth} mx-auto ${className}`}>
-      <div className="relative bg-white rounded-[22px] border border-slate-200 shadow-[0_24px_60px_rgba(47,91,255,0.18)] p-6 md:p-10 min-h-[300px] md:min-h-[360px]">
+      <div className="relative bg-white rounded-[22px] shadow-[0_24px_60px_rgba(47,91,255,0.18)] p-6 md:p-10 min-h-[300px] md:min-h-[360px]">
         {children}
       </div>
     </div>

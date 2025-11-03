@@ -2,6 +2,8 @@ import React from 'react'
 import ShigramPayHero from './components/ShigramPayHero'
 import RecognitionCardsSection from './components/RecognitionCardsSection'
 import OrbitSection from './components/OrbitSection'
+import ScrollStackCards from './components/ScrollStackCards'
+import FaceScanShowcase from './components/FaceScanShowcase'
 import AcceptMethodsSection from './components/AcceptMethodsSection'
 import FAQNew from './components/FAQNew'
 import DownloadCTA from './components/DownloadCTA'
@@ -12,7 +14,9 @@ export default function App() {
     <div className="font-inter text-ink">
       <ShigramPayHero />
       <RecognitionCardsSection />
+      <FaceScanShowcase />
       <OrbitSection />
+      <ScrollStackCards />
       <AcceptMethodsSection />
       <FAQNew />
       <DownloadCTA />

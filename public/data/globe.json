@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "India" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[68.1766, 7.9655], [97.4026, 7.9655], [97.4026, 35.4940], [68.1766, 35.4940], [68.1766, 7.9655]]]
+      }
+    }
+  ]
+}
+
+

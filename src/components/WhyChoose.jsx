@@ -11,9 +11,9 @@ export default function WhyChoose() {
         <div className="grid md:grid-cols-2 items-center gap-12">
           <div className="relative aspect-square max-w-[380px] mx-auto">
             {/* Orbit placeholder. Replace central logo circle and ring dots with your artwork */}
-            <div className="absolute inset-0 rounded-full border-2 border-primary-100"></div>
-            <div className="absolute inset-6 rounded-full border-2 border-primary-100"></div>
-            <div className="absolute inset-12 rounded-full border-2 border-primary-100"></div>
+            <div className="absolute inset-0 rounded-full"></div>
+            <div className="absolute inset-6 rounded-full"></div>
+            <div className="absolute inset-12 rounded-full"></div>
             <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 h-20 w-20 rounded-full bg-primary-600 grid place-items-center text-white font-bold">S</div>
             <Dot color="bg-primary-600 absolute left-0 top-1/2 -translate-y-1/2" />
             <Dot color="bg-amber-500 absolute right-6 top-8" />

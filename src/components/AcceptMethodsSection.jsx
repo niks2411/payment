@@ -25,8 +25,7 @@ export default function AcceptMethodsSection() {
           <div className="relative h-60 w-[220px] sm:h-72 sm:w-[260px] md:h-80 md:w-[320px] rounded-2xl overflow-hidden">
             <img src="/image3.png" alt="Payments UI" className="h-full w-full object-contain" />
           </div>
-
-          {/* overlapping smaller image (image4) */}
+       {/* overlapping smaller image (image4) */}
           <div className="absolute -bottom-8 left-8 sm:left-12 md:left-16 z-10 h-28 w-48 sm:h-30 sm:w-52 md:h-34 md:w-68 rounded-xl overflow-hidden">
             <img src="/image4.png" alt="Analytics UI" className="h-full w-full object-contain" />
           </div>

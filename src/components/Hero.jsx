@@ -17,7 +17,7 @@ export default function Hero() {
 
         <div className="relative">
           {/* Image placeholder: replace this container with your illustration */}
-          <div className="aspect-[4/3] w-full rounded-2xl bg-white shadow-card border border-slate-100 grid place-items-center">
+          <div className="aspect-[4/3] w-full rounded-2xl bg-white shadow-card grid place-items-center">
             <span className="text-slate-400">Hero Illustration Placeholder</span>
           </div>
           {/* floating chips */}
