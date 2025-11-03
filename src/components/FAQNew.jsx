@@ -5,24 +5,32 @@ function FAQSection() {
 
   const faqs = [
     {
-      question: "What is Staggervity?",
-      answer: "Staggervity our payment application company. Staggervity offers the key ideas to the companies through payment gateways. We also offer free payment gateway and zero credit and deduction for financial transactions."
+      question: "What is ShigramPay?",
+      answer: "ShigramPay is a facial‑recognition payment platform. Add money once to your ShigramPay balance and pay at partner stores, restaurants, fuel stations, and online merchants using just your face."
     },
     {
-      question: "How do I Register for Staggervity services?",
-      answer: "Staggervity our payment application company. Staggervity offers the key ideas to the companies through payment gateways. We also offer free payment gateway and zero credit and deduction for financial transactions."
+      question: "How does face payment work?",
+      answer: "At checkout, look at the camera for a quick liveness check. We verify your identity using AI‑powered face recognition and deduct the amount from your ShigramPay balance instantly—no phone or card needed."
     },
     {
-      question: "Where do I register for Staggervity membership?",
-      answer: "Staggervity our payment application company. Staggervity offers the key ideas to the companies through payment gateways. We also offer free payment gateway and zero credit and deduction for financial transactions."
+      question: "Is my biometric data safe?",
+      answer: "Yes. We use bank‑grade encryption and strict privacy controls. Biometric templates are protected and never shared with third parties. Transactions are secure and auditable in the app."
     },
     {
-      question: "Can I transfer my voucher to someone else?",
-      answer: "Staggervity our payment application company. Staggervity offers the key ideas to the companies through payment gateways. We also offer free payment gateway and zero credit and deduction for financial transactions."
+      question: "Where can I use ShigramPay?",
+      answer: "Across our partner network—retail stores, restaurants, fuel stations and online merchants that accept ShigramPay. We’re expanding rapidly and will be available in more locations soon."
     },
     {
-      question: "Are there any fees or charges?",
-      answer: "Staggervity our payment application company. Staggervity offers the key ideas to the companies through payment gateways. We also offer free payment gateway and zero credit and deduction for financial transactions."
+      question: "What if my face isn’t recognized?",
+      answer: "You can retry the scan (ensure good lighting and remove masks/caps). If it still fails, pay using an alternate method and contact support; we’ll help update your face profile."
+    },
+    {
+      question: "Can I get a refund for unused balance?",
+      answer: "Yes. If your balance is unused, you may request a refund as per our refund policy in the app. Refunds are processed to your original payment method."
+    },
+    {
+      question: "Are there any fees?",
+      answer: "Creating an account is free. Standard transaction policies apply; any promotional or network‑specific fees will be shown clearly before you pay."
     }
   ];
 

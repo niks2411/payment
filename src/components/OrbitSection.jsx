@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function OrbitalFeatures() {
   return (
-    <section className="bg-white section-y">
+    <section className="bg-white section-y overflow-hidden">
       <div className="container-x">
         {/* Orbital System */}
         <div className="relative w-full max-w-[620px] mx-auto mb-12" style={{ height: '420px' }}>

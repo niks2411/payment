@@ -110,7 +110,7 @@
 @layer base {
   /* Removed global border application */
   body {
-    @apply bg-background text-foreground font-inter antialiased;
+    @apply bg-background text-foreground font-inter antialiased overflow-x-hidden;
   }
 }
 
