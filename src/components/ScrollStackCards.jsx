@@ -62,7 +62,7 @@ export default function ScrollStackCards() {
 
   return (
     <div className="bg-white">
-      <div className="min-h-[40vh] xl:min-h-[15vh] flex items-center justify-center p-4">
+      <div className="min-h-[70vh] xl:min-h-[15vh] flex items-center justify-center p-4 mb-2">
         <div className="text-center">
           <h1 className="text-6xl font-bold mb-4 bg-gradient-to-b from-blue-700 to-blue-500 bg-clip-text text-transparent">ShigramPay</h1>
           <p className="text-xl text-slate-600">The Future of Face Recognition Payments</p>
@@ -125,6 +125,9 @@ export default function ScrollStackCards() {
           );
         })}
       </div>
+
+      {/* Spacer to prevent next section overlap on small screens */}
+      <div className="h-40 sm:h-20 md:h-24" />
 
       {showCTA && (
         <div className="fixed bottom-4 right-4 z-50 w-[92vw] max-w-sm">
