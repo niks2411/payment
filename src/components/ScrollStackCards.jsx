@@ -62,7 +62,7 @@ export default function ScrollStackCards() {
 
   return (
     <div className="bg-white">
-      <div className="min-h-[10vh] xl:min-h-[15vh] flex items-center justify-center p-4">
+      <div className="min-h-[40vh] xl:min-h-[15vh] flex items-center justify-center p-4">
         <div className="text-center">
           <h1 className="text-6xl font-bold mb-4 bg-gradient-to-b from-blue-700 to-blue-500 bg-clip-text text-transparent">ShigramPay</h1>
           <p className="text-xl text-slate-600">The Future of Face Recognition Payments</p>
