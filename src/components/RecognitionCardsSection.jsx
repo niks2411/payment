@@ -30,12 +30,12 @@ const customerBenefits = [
 export default function RecognitionCardsSection() {
   return (
     <section className="relative py-10">
-      <div className="mx-auto w-full max-w-[1180px] px-5 lg:px-8">
+      <div className="mx-auto w-full max-w-[1320px] xl:max-w-[1440px] px-4 md:px-6 lg:px-8">
         <div className="mx-auto w-full max-w-[960px] h-10 mb-6 marquee flex items-center">
           <div className="marquee-inner left-0">{marqueeItems}</div>
         </div>
 
-        <InfoCard maxWidth="max-w-[1200px]">
+        <InfoCard maxWidth="max-w-[1360px]">
           <div className="pointer-events-none absolute -z-10 -top-6 -left-4 w-[320px] h-[200px] rounded-[120px] bg-blue-500/50 blur-xl" />
           <div className="pointer-events-none absolute -z-10 -bottom-6 -right-4 w-[300px] h-[190px] rounded-[120px] bg-blue-600/45 blur-xl" />
           <div className="flex flex-col lg:flex-row gap-8">
@@ -62,7 +62,7 @@ export default function RecognitionCardsSection() {
           </div>
         </InfoCard>
 
-        <InfoCard className="mt-24 mb-24" maxWidth="max-w-[1200px]">
+        <InfoCard className="mt-16 mb-16 xl:mt-14 xl:mb-14" maxWidth="max-w-[1360px]">
           <div className="pointer-events-none absolute -z-10 -top-6 -right-4 w-[300px] h-[190px] rounded-[120px] bg-blue-500/45 blur-xl" />
           <div className="pointer-events-none absolute -z-10 -bottom-6 -left-4 w-[320px] h-[200px] rounded-[120px] bg-blue-600/45 blur-xl" />
           <div className="flex flex-col lg:flex-row gap-8 items-start">
@@ -76,7 +76,7 @@ export default function RecognitionCardsSection() {
           </div>
         </InfoCard>
 
-        <InfoCard className="mt-24" maxWidth="max-w-[1200px]">
+        <InfoCard className="mt-16 xl:mt-14" maxWidth="max-w-[1360px]">
           <div className="pointer-events-none absolute -z-10 -top-6 -left-4 w-[320px] h-[200px] rounded-[120px] bg-blue-500/50 blur-xl" />
           <div className="pointer-events-none absolute -z-10 -bottom-6 -right-4 w-[300px] h-[190px] rounded-[120px] bg-blue-600/45 blur-xl" />
           <div className="flex flex-col lg:flex-row gap-8 items-start">

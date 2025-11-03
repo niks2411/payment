@@ -3,7 +3,7 @@ import React from 'react'
 export default function DownloadCTA() {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="container-x grid md:grid-cols-2 items-center gap-10">
+      <div className="w-full max-w-[1600px] xl:max-w-[1800px] mx-auto px-4 md:px-8 lg:px-12 grid md:grid-cols-2 items-center gap-8 md:gap-10">
         {/* Left text */}
         <div>
           <p className="text-sm font-semibold text-primary-600">Get Started Now - ShigramPay</p>

@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <header className="container-x py-5 flex items-center justify-between">
+    <header className="w-full py-5 px-6 md:px-10 lg:px-12 flex items-center justify-between">
       <div className="flex items-center gap-2">
-        <div className="h-7 w-7 rounded-md bg-primary-600"></div>
-        <span className="font-bold tracking-tight">SHIGRAMPAY</span>
+        <img src="/logo.png" alt="ShigramPay" className="h-12 w-auto" />
+        {/* <span className="font-bold tracking-tight">SHIGRAMPAY</span> */}
       </div>
 
-      <nav className="hidden md:flex items-center gap-8 text-sm text-slate-600">
+      <nav className="hidden md:flex items-center gap-8 text-base lg:text-lg text-slate-600">
         <a href="#" className="hover:text-primary-700">Home</a>
         <a href="#" className="hover:text-primary-700">Personal</a>
         <a href="#" className="hover:text-primary-700">Business</a>

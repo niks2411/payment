@@ -7,10 +7,10 @@ export default function OrbitalFeatures() {
         {/* Orbital System */}
         <div className="relative w-full max-w-[620px] mx-auto mb-12" style={{ height: '420px' }}>
           {/* Orbit rings */}
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border border-blue-400/90"></div>
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full border border-blue-400/80"></div>
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full border border-blue-400/70"></div>
-          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full border border-blue-400/60"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 xl:w-56 xl:h-56 rounded-full border border-blue-400/90"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 xl:w-72 xl:h-72 rounded-full border border-blue-400/80"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 xl:w-88 xl:h-88 rounded-full border border-blue-400/70"></div>
+          <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 xl:w-[28rem] xl:h-[28rem] rounded-full border border-blue-400/60"></div>
 
           {/* Title placed between 3rd and 4th rings; frosted background */}
           <div className="absolute z-20 top-[82%] left-1/2 -translate-x-1/2 bg-white/70 backdrop-blur-sm px-4 py-1 rounded-full shadow-sm">
@@ -23,7 +23,7 @@ export default function OrbitalFeatures() {
           {/* Planet 1 - equal size (behind text) */}
           <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '18s' }}>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full shadow-lg overflow-hidden">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 xl:w-14 xl:h-14 rounded-full shadow-lg overflow-hidden">
                 <img src="/icon1.png" alt="planet" className="h-full w-full object-cover" />
               </div>
             </div>
@@ -32,7 +32,7 @@ export default function OrbitalFeatures() {
           {/* Planet 2 - equal size */}
           <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '24s' }}>
-              <div className="absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full shadow-lg overflow-hidden">
+              <div className="absolute -top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 xl:w-14 xl:h-14 rounded-full shadow-lg overflow-hidden">
                 <img src="/icon2.png" alt="planet" className="h-full w-full object-cover" />
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function OrbitalFeatures() {
           {/* Planet 3 - equal size */}
           <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '28s', animationDirection: 'reverse' }}>
-              <div className="absolute -top-2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full shadow-lg overflow-hidden">
+              <div className="absolute -top-2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 xl:w-14 xl:h-14 rounded-full shadow-lg overflow-hidden">
                 <img src="/icon3.png" alt="planet" className="h-full w-full object-cover" />
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function OrbitalFeatures() {
           {/* Planet 4 - equal size */}
           <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96">
             <div className="relative w-full h-full animate-spin" style={{ animationDuration: '34s' }}>
-              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 translate-y-1/2 w-12 h-12 rounded-full shadow-lg overflow-hidden">
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 translate-y-1/2 w-12 h-12 xl:w-14 xl:h-14 rounded-full shadow-lg overflow-hidden">
                 <img src="/icon4.png" alt="planet" className="h-full w-full object-cover" />
               </div>
             </div>

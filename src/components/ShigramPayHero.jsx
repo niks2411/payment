@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 
 
 
@@ -6,50 +7,20 @@ export default function ShigramPayHero() {
 
   return (
 
-    <div className="min-h-[620px] md:min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-600">
+    <div className="min-h-[620px] md:min-h-[80vh] bg-gradient-to-b from-white via-blue-50 to-blue-600">
 
       {/* Navigation */}
-
-      <nav className="flex items-center justify-between px-6 md:px-16 py-6">
-
-        <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="ShigramPay" className="h-12 w-auto" />
-      
-        </div>
-
-        
-
-        <div className="hidden md:flex items-center gap-8">
-
-          <a href="#" className="text-gray-800 font-medium">Home</a>
-
-          <a href="#" className="text-gray-400 font-medium">Personal</a>
-
-          <a href="#" className="text-gray-400 font-medium">Business</a>
-
-          <a href="#" className="text-gray-400 font-medium">Contact us</a>
-
-        </div>
-
-        
-
-        <button className="bg-blue-600 text-white px-8 py-2.5 rounded-full font-medium hover:bg-blue-700 transition">
-
-          Sign in
-
-        </button>
-
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
 
-      <div className="grid md:grid-cols-2 items-center gap-10 px-6 md:px-16 pt-10 md:pt-20 pb-16 md:pb-32">
+      <div className="grid md:grid-cols-2 items-center gap-8 md:gap-10 px-6 md:px-16 pt-10 md:pt-20 pb-12 md:pb-20">
 
         {/* Left Content */}
 
         <div className="md:pr-12">
 
-          <h1 className="text-6xl font-bold text-blue-600 leading-tight mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-600 leading-tight mb-6 md:mb-8">
 
             Blink. Pay. Go.
 
