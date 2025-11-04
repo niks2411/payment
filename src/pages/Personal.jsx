@@ -24,7 +24,7 @@ export default function Personal() {
     },
     {
       id: 4,
-      title: 'No Touch Technology',
+      title: 'Contactless',
       description:
         'Touchless payments that are hygienic and effortless. Simply look at the camera; the rest happens automatically.',
       points: ['Hands‑free checkout', 'Great for food courts and fuel', 'Works with existing merchant devices'],

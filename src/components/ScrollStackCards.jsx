@@ -148,8 +148,12 @@ export default function ScrollStackCards() {
               </div>
             </div>
             <button
-              onClick={redirectToStore}
-              className="mt-3 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                redirectToStore();
+              }}
+              className="mt-3 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md w-full transition"
             >
               Download
             </button>

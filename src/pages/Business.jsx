@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
-import { redirectToStore } from '../utils'
+import { redirectToMerchantStore } from '../utils'
 
 export default function Business() {
   const [scrollY, setScrollY] = useState(0)
@@ -188,7 +188,7 @@ export default function Business() {
         <div className="container-x text-center">
           <h3 className="text-3xl md:text-4xl font-extrabold text-slate-900">Ready to get started?</h3>
           <p className="mt-2 text-lg text-slate-600">Delight customers and speed up lines with face payments.</p>
-          <button onClick={redirectToStore} className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-blue-300/40 shadow-md">Download Shigrampay</button>
+          <button onClick={redirectToMerchantStore} className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-blue-300/40 shadow-md">Download ShigramPay Merchant</button>
         </div>
       </section>
 
