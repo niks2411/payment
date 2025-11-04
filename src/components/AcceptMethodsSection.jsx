@@ -1,4 +1,5 @@
 import React from 'react'
+import { redirectToStore } from '../utils'
 
 export default function AcceptMethodsSection() {
   return (
@@ -12,7 +13,7 @@ export default function AcceptMethodsSection() {
           UPI, credit/debit cards, net banking, and wallets—use what works best for you.
           ShigramPay keeps checkout fast, flexible, and secure everywhere.
         </p>
-        <button className="mt-7 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-blue-300/40 shadow-md">
+        <button onClick={redirectToStore} className="mt-7 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold shadow-blue-300/40 shadow-md">
           Get Started
         </button>
       </div>

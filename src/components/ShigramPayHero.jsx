@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import { redirectToStore } from '../utils';
 
 
 
@@ -42,7 +43,7 @@ export default function ShigramPayHero() {
 
           
 
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition">
+          <button onClick={redirectToStore} className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition">
 
             Get Started
 

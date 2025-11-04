@@ -1,4 +1,5 @@
 import React from 'react'
+import { redirectToStore } from '../utils'
 
 export default function DownloadCTA() {
   return (
@@ -12,7 +13,7 @@ export default function DownloadCTA() {
             <br />
             The Best Experience
           </h2>
-          <button className="mt-6 btn-primary">Download Now!</button>
+          <button onClick={redirectToStore} className="mt-6 btn-primary">Download Now!</button>
         </div>
 
         {/* Right visuals with placeholders for images */}
