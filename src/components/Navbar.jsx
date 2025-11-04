@@ -9,16 +9,17 @@ export default function Navbar() {
       </div>
 
       <nav className="hidden md:flex items-center gap-8 text-base lg:text-lg text-slate-600">
-        <a href="#" className="hover:text-primary-700">Home</a>
-        <a href="#" className="hover:text-primary-700">Personal</a>
-        <a href="#" className="hover:text-primary-700">Business</a>
-        <a href="#" className="hover:text-primary-700">Contact us</a>
+        <a href="/" className="hover:text-primary-700">Home</a>
+        <a href="/personal" className="hover:text-primary-700">Personal</a>
+        <a href="/business" className="hover:text-primary-700">Business</a>
+        <a href="/contact" className="hover:text-primary-700">Contact us</a>
       </nav>
 
-      <div className="flex items-center gap-3">
+      {/* <div className="flex items-center gap-3"> */}
         {/* <button className="hidden md:inline-flex btn-outline">Sign In</button> */}
-        <button className="btn-primary">Sign up</button>
-      </div>
+        {/* <button className="btn-primary">Sign up</button>
+      </div> */}
+      <div> </div>
     </header>
   )
 }

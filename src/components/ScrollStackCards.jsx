@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { redirectToStore } from '../utils';
 
 export default function ScrollStackCards() {
   const [scrollY, setScrollY] = useState(0);
@@ -146,12 +147,12 @@ export default function ScrollStackCards() {
                 <p className="text-xs text-slate-600">Join thousands paying with their face.</p>
               </div>
             </div>
-            <a
-              href="#download"
+            <button
+              onClick={redirectToStore}
               className="mt-3 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md"
             >
               Download
-            </a>
+            </button>
           </div>
         </div>
       )}
