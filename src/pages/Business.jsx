@@ -21,6 +21,13 @@ export default function Business() {
         'Our robust verification reduces errors at the counter and keeps transactions flowing even in busy environments.',
       points: ['Reliable authorization', 'Fewer abandoned orders', 'Smoother rush‑hour operations'],
       image: '/b2.webp',
+    },    {
+      id: 5,
+      title: 'Valuable Business Insights',
+      description:
+        'Understand conversion, repeat visits, and peak hours with privacy‑safe analytics designed for retail speed.',
+      points: ['Revenue and funnel trends', 'Store and staff comparisons', 'Exportable reports'],
+      image: '/b5.webp',
     },
     {
       id: 3,
@@ -38,14 +45,7 @@ export default function Business() {
       points: ['Liveness + device signals', 'Anomaly detection', 'Actionable alerts'],
       image: '/b4.webp',
     },
-    {
-      id: 5,
-      title: 'Valuable Business Insights',
-      description:
-        'Understand conversion, repeat visits, and peak hours with privacy‑safe analytics designed for retail speed.',
-      points: ['Revenue and funnel trends', 'Store and staff comparisons', 'Exportable reports'],
-      image: '/b5.webp',
-    },
+
   ]
 
   useEffect(() => {
@@ -146,7 +146,7 @@ export default function Business() {
             <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden hover:shadow-xl hover:border-orange-500 transition-all duration-300">
               <div className="bg-gradient-to-r from-orange-700 to-orange-800 text-white font-bold text-center py-4 text-lg">BYOD</div>
               <div className="p-6 text-slate-700 space-y-3">
-                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Digital Ads Integration</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Digital Add Integration with Facial Payments</p>
                 <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> AI Enabled</p>
               </div>
             </div>
