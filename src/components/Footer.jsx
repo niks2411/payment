@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="text-base font-semibold text-slate-700 mb-3">Service</h4>
             <ul className="space-y-2 text-base text-slate-600">
-              <li><a href="#" className="hover:text-primary-600">Contact Us</a></li>
+              <li><a href="/contact" className="hover:text-primary-600">Contact Us</a></li>
               <li><a href="#" className="hover:text-primary-600">FAQ</a></li>
             </ul>
           </div>
