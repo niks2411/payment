@@ -113,41 +113,41 @@ export default function Business() {
           <h3 className="text-3xl font-extrabold text-slate-900 text-center mb-10">Business Packages</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {/* Silver */}
-            <div className="bg-white rounded-2xl shadow-card overflow-hidden">
-              <div className="bg-slate-300 text-slate-900 font-bold text-center py-3">Silver Plan</div>
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden hover:shadow-xl hover:border-blue-300 transition-all duration-300">
+              <div className="bg-gradient-to-r from-slate-300 to-slate-400 text-slate-900 font-bold text-center py-4 text-lg">Silver Plan</div>
               <div className="p-6 text-slate-700 space-y-3">
-                <p>• Integrated Device</p>
-                <p>• Facial Payments</p>
-                <p>• AI Enabled</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Integrated Device</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Facial Payments</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> AI Enabled</p>
               </div>
             </div>
             {/* Gold */}
-            <div className="bg-white rounded-2xl shadow-card overflow-hidden">
-              <div className="bg-amber-400 text-slate-900 font-bold text-center py-3">Gold Plan</div>
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden hover:shadow-xl hover:border-amber-300 transition-all duration-300">
+              <div className="bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 font-bold text-center py-4 text-lg">Gold Plan</div>
               <div className="p-6 text-slate-700 space-y-3">
-                <p>• Integrated Device</p>
-                <p>• Facial Payments</p>
-                <p>• Digital Ads Integration</p>
-                <p>• AI Enabled</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Integrated Device</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Facial Payments</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Digital Ads Integration</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> AI Enabled</p>
               </div>
             </div>
             {/* Platinum */}
-            <div className="bg-white rounded-2xl shadow-card overflow-hidden">
-              <div className="bg-blue-700 text-white font-bold text-center py-3">Platinum Plan</div>
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden hover:shadow-xl hover:border-blue-600 transition-all duration-300">
+              <div className="bg-gradient-to-r from-blue-700 to-blue-800 text-white font-bold text-center py-4 text-lg">Platinum Plan</div>
               <div className="p-6 text-slate-700 space-y-3">
-                <p>• Integrated Device</p>
-                <p>• Facial Payments</p>
-                <p>• Digital Ads Integration</p>
-                <p>• Menu Integration</p>
-                <p>• AI Enabled</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Integrated Device</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Facial Payments</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Digital Ads Integration</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Menu Integration</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> AI Enabled</p>
               </div>
             </div>
             {/* BYOD */}
-            <div className="bg-white rounded-2xl shadow-card overflow-hidden">
-              <div className="bg-orange-700 text-white font-bold text-center py-3">BYOD</div>
+            <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden hover:shadow-xl hover:border-orange-500 transition-all duration-300">
+              <div className="bg-gradient-to-r from-orange-700 to-orange-800 text-white font-bold text-center py-4 text-lg">BYOD</div>
               <div className="p-6 text-slate-700 space-y-3">
-                <p>• Digital Ads Integration</p>
-                <p>• AI Enabled</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> Digital Ads Integration</p>
+                <p className="flex items-center gap-2"><span className="text-blue-600 font-semibold">•</span> AI Enabled</p>
               </div>
             </div>
           </div>

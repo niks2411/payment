@@ -5,7 +5,7 @@ import { collection, getDocs, onSnapshot, query, orderBy } from 'firebase/firest
 
 // Admin credentials (you can move these to env variables for better security)
 const ADMIN_USERNAME = import.meta.env.VITE_ADMIN_USERNAME || 'admin'
-const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123'
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'shigrampay@2025'
 
 export default function Admin() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
