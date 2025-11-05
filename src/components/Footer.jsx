@@ -26,6 +26,7 @@ export default function Footer() {
               <li><a href="/terms" className="hover:text-primary-600">Terms & Conditions</a></li>
               <li><a href="/privacy" className="hover:text-primary-600">Privacy Policy</a></li>
               <li><a href="/refund" className="hover:text-primary-600">Refund Policy</a></li>
+              <li><a href="/grievance" className="hover:text-primary-600">Grievance</a></li>
             </ul>
           </div>
 
@@ -34,16 +35,16 @@ export default function Footer() {
             <h4 className="text-base font-semibold text-slate-700 mb-3">Contact us</h4>
             <a href="mailto:support@shigrampay.com" className="text-base text-primary-600 underline break-words">support@shigrampay.com</a>
             <div className="mt-4 flex items-center justify-center md:justify-start gap-4">
-              <a href="#" aria-label="Facebook">
+              <a href="https://www.facebook.com/ShigramPay" aria-label="Facebook">
                 <img src="/facebook.png" alt="Facebook" className="h-5 w-5 md:h-6 md:w-6" />
               </a>
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com/shigrampay" aria-label="Instagram">
                 <img src="/instagram.png" alt="Instagram" className="h-5 w-5 md:h-6 md:w-6" />
               </a>
-              <a href="#" aria-label="X">
+              <a href="https://x.com/ShigramPay" aria-label="X">
                 <img src="/x.png" alt="X" className="h-5 w-5 md:h-6 md:w-6" />
               </a>
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/shigrampay" aria-label="LinkedIn">
                 <img src="/linkedin.png" alt="LinkedIn" className="h-5 w-5 md:h-6 md:w-6" />
               </a>
             </div>
