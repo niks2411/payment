@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="text-base font-semibold text-slate-700 mb-3">Service</h4>
             <ul className="space-y-2 text-base text-slate-600">
-              <li><a href="/contact" className="hover:text-primary-600">Contact Us</a></li>
+              <li><Link to="/contact" className="hover:text-primary-600">Contact Us</Link></li>
               <li><a href="#" className="hover:text-primary-600">FAQ</a></li>
             </ul>
           </div>
@@ -23,10 +24,10 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="text-base font-semibold text-slate-700 mb-3">Further Information</h4>
             <ul className="space-y-2 text-base text-slate-600">
-              <li><a href="/terms" className="hover:text-primary-600">Terms & Conditions</a></li>
-              <li><a href="/privacy" className="hover:text-primary-600">Privacy Policy</a></li>
-              <li><a href="/refund" className="hover:text-primary-600">Refund Policy</a></li>
-              <li><a href="/grievance" className="hover:text-primary-600">Grievance</a></li>
+              <li><Link to="/terms-and-condition" className="hover:text-primary-600">Terms & Conditions</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-primary-600">Privacy Policy</Link></li>
+              <li><Link to="/refund" className="hover:text-primary-600">Refund Policy</Link></li>
+              <li><Link to="/grievance" className="hover:text-primary-600">Grievance</Link></li>
             </ul>
           </div>
 

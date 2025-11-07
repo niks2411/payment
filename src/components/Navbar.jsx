@@ -16,7 +16,7 @@ export default function Navbar() {
         <a href="/business" className="hover:text-primary-700">Business</a>
         <a href="/contact" className="hover:text-primary-700">Contact us</a>
       </nav>
-
+      <div> </div>
       {/* Mobile hamburger */}
       <button
         type="button"

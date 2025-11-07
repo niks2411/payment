@@ -18,8 +18,8 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/privacy" element={<><Policy /><Footer /></>} />
-        <Route path="/terms" element={<><Terms /><Footer /></>} />
+        <Route path="/privacy-policy" element={<><Policy /><Footer /></>} />
+        <Route path="/terms-and-condition" element={<><Terms /><Footer /></>} />
         <Route path="/refund" element={<><Refund /><Footer /></>} />
         <Route path="/personal" element={<><Personal /><Footer /></>} />
         <Route path="/business" element={<><Business /><Footer /></>} />
