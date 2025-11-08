@@ -39,11 +39,12 @@ function FAQSection() {
   };
 
   return (
-    <div style={{
+    <div id="faq" style={{
       background: 'white',
       position: 'relative',
       overflow: 'hidden',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif'
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif',
+      scrollMarginTop: '80px'
     }}>
       {/* Left Circle */}
       <div style={{

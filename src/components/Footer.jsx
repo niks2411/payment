@@ -1,7 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function Footer() {
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const handleFAQClick = (e) => {
+    e.preventDefault()
+    if (location.pathname === '/') {
+      // Already on home page, just scroll
+      const element = document.querySelector('#faq')
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } else {
+      // Navigate to home page first
+      navigate('/')
+      // Wait for navigation and DOM update, then scroll
+      setTimeout(() => {
+        const element = document.querySelector('#faq')
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 300)
+    }
+  }
+
   return (
     <footer className="bg-slate-50 border-t border-slate-200">
       <div className="w-full max-w-[1100px] xl:max-w-[1280px] 2xl:max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 pt-8 pb-8 md:pt-10 md:pb-10">
@@ -16,7 +40,7 @@ export default function Footer() {
             <h4 className="text-base font-semibold text-slate-700 mb-3">Service</h4>
             <ul className="space-y-2 text-base text-slate-600">
               <li><Link to="/contact" className="hover:text-primary-600">Contact Us</Link></li>
-              <li><a href="#" className="hover:text-primary-600">FAQ</a></li>
+              <li><a href="/#faq" onClick={handleFAQClick} className="hover:text-primary-600">FAQ</a></li>
             </ul>
           </div>
 
