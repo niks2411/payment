@@ -1,13 +1,40 @@
-export function getStoreUrl() {
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.vnetix.shigrampay&pcampaignid=web_share'
+const APP_STORE_URL = 'https://apps.apple.com/in/app/shigrampay/id6746239075'
+
+function getPlatformMeta() {
+  if (typeof navigator === 'undefined') {
+    return { isIOS: false, isAndroid: false }
+  }
+  const ua = navigator.userAgent || navigator.vendor || ''
+  const isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && typeof document !== 'undefined' && 'ontouchend' in document)
+  const isAndroid = /Android/i.test(ua)
+  return { isIOS, isAndroid }
+}
+
+function appendReferralToUrl(urlString, referralCode, paramKey) {
+  if (!referralCode) return urlString
   try {
-    const ua = navigator.userAgent || navigator.vendor || '';
-    const isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && typeof document !== 'undefined' && 'ontouchend' in document);
+    const url = new URL(urlString)
+    url.searchParams.set(paramKey, referralCode)
+    return url.toString()
+  } catch (error) {
+    console.error('Failed to append referral to URL', error)
+    const separator = urlString.includes('?') ? '&' : '?'
+    return `${urlString}${separator}${paramKey}=${encodeURIComponent(referralCode)}`
+  }
+}
+
+export function getStoreUrl(referralCode) {
+  try {
+    const { isIOS } = getPlatformMeta()
+    const sanitizedReferral = typeof referralCode === 'string' ? referralCode.trim() : ''
+
     if (isIOS) {
-      return 'https://apps.apple.com/in/app/shigrampay/id6746239075';
+      return sanitizedReferral ? appendReferralToUrl(APP_STORE_URL, sanitizedReferral, 'referral') : APP_STORE_URL
     }
-    return 'https://play.google.com/store/apps/details?id=com.vnetix.shigrampay&pcampaignid=web_share';
+    return sanitizedReferral ? appendReferralToUrl(PLAY_STORE_URL, sanitizedReferral, 'referrer') : PLAY_STORE_URL
   } catch (e) {
-    return 'https://play.google.com/store/apps/details?id=com.vnetix.shigrampay&pcampaignid=web_share';
+    return PLAY_STORE_URL
   }
 }
 
@@ -24,9 +51,9 @@ export function getMerchantStoreUrl() {
   }
 }
 
-export function redirectToStore() {
+export function redirectToStore(referralCode) {
   try {
-    const url = getStoreUrl();
+    const url = getStoreUrl(referralCode);
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
       // Popup blocked, try direct navigation
@@ -34,7 +61,7 @@ export function redirectToStore() {
     }
   } catch (e) {
     console.error('Error redirecting to store:', e);
-    window.location.href = getStoreUrl();
+    window.location.href = getStoreUrl(referralCode);
   }
 }
 
@@ -49,6 +76,62 @@ export function redirectToMerchantStore() {
   } catch (e) {
     console.error('Error redirecting to merchant store:', e);
     window.location.href = getMerchantStoreUrl();
+  }
+}
+
+export function getDeepLinkUrl(referralCode) {
+  const baseUrl = 'shigrampay://register'
+  if (!referralCode) return baseUrl
+  const sanitized = referralCode.trim()
+  if (!sanitized) return baseUrl
+  return `${baseUrl}?referral=${encodeURIComponent(sanitized)}`
+}
+
+export function redirectToAppOrStore(referralCode, options = {}) {
+  const { fallbackDelay = 1600 } = options
+  try {
+    const deepLinkUrl = getDeepLinkUrl(referralCode)
+    const storeUrl = getStoreUrl(referralCode)
+    const { isIOS } = getPlatformMeta()
+
+    let hasNavigated = false
+    const markNavigated = () => {
+      hasNavigated = true
+    }
+
+    const fallbackHandler = () => {
+      if (hasNavigated) return
+      hasNavigated = true
+      window.location.href = storeUrl
+    }
+
+    const timer = setTimeout(fallbackHandler, fallbackDelay)
+
+    const cleanup = () => {
+      clearTimeout(timer)
+      markNavigated()
+    }
+
+    window.addEventListener('pagehide', cleanup, { once: true })
+    window.addEventListener('blur', cleanup, { once: true })
+
+    if (isIOS) {
+      window.location.href = deepLinkUrl
+    } else {
+      const iframe = document.createElement('iframe')
+      iframe.style.display = 'none'
+      iframe.src = deepLinkUrl
+      iframe.onload = cleanup
+      document.body.appendChild(iframe)
+      setTimeout(() => {
+        if (iframe.parentNode) {
+          iframe.parentNode.removeChild(iframe)
+        }
+      }, fallbackDelay + 500)
+    }
+  } catch (error) {
+    console.error('Error launching deep link, falling back to store', error)
+    window.location.href = getStoreUrl(referralCode)
   }
 }
 

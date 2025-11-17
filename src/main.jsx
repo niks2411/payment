@@ -12,6 +12,7 @@ import Grievance from './pages/Grievance'
 import Contact from './pages/Contact'
 import Admin from './pages/Admin'
 import Footer from './components/Footer'
+import RegisterRedirect from './pages/RegisterRedirect'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -26,6 +27,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/grievance" element={<><Grievance /><Footer /></>} />
         <Route path="/contact" element={<><Contact /><Footer /></>} />
         <Route path="/admin" element={<><Admin /><Footer /></>} />
+        <Route path="/register" element={<RegisterRedirect />} />
+        <Route path="/register/:referralCode" element={<RegisterRedirect />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
