@@ -94,9 +94,19 @@ export function redirectToAppOrStore(referralCode, options = {}) {
     const storeUrl = getStoreUrl(referralCode)
     const { isIOS, isAndroid } = getPlatformMeta()
 
+    // Debug logging (can be removed in production)
+    console.log('🔗 Deep Link Info:', {
+      referralCode: referralCode || '(none)',
+      deepLinkUrl,
+      storeUrl,
+      platform: isIOS ? 'iOS' : isAndroid ? 'Android' : 'Desktop',
+      userAgent: navigator.userAgent
+    })
+
     // Only attempt deep linking on mobile devices
     if (!isIOS && !isAndroid) {
       // Desktop - go directly to store
+      console.log('🖥️ Desktop detected, redirecting to store')
       window.location.href = storeUrl
       return
     }
@@ -111,6 +121,7 @@ export function redirectToAppOrStore(referralCode, options = {}) {
     const fallbackHandler = () => {
       if (hasNavigated || fallbackTriggered) return
       fallbackTriggered = true
+      console.log('⏰ Fallback triggered - app not installed, redirecting to store:', storeUrl)
       window.location.href = storeUrl
     }
 
@@ -121,6 +132,7 @@ export function redirectToAppOrStore(referralCode, options = {}) {
     const cleanup = () => {
       clearTimeout(timer)
       markNavigated()
+      console.log('✅ App opened successfully (pagehide/blur detected)')
     }
 
     window.addEventListener('pagehide', cleanup, { once: true })
@@ -129,6 +141,7 @@ export function redirectToAppOrStore(referralCode, options = {}) {
     // Try to open the app with deep link
     // For both iOS and Android, use direct location assignment
     // If app is installed, it will open; if not, fallback will trigger
+    console.log('📱 Attempting to open app with deep link:', deepLinkUrl)
     window.location.href = deepLinkUrl
 
     // Additional Android fallback using intent URL
@@ -137,9 +150,11 @@ export function redirectToAppOrStore(referralCode, options = {}) {
       const intentUrl = `intent://register${referralCode ? `?referral=${encodeURIComponent(referralCode.trim())}` : ''}#Intent;scheme=shigrampay;package=com.vnetix.shigrampay;end`
       setTimeout(() => {
         if (!hasNavigated && !fallbackTriggered) {
+          console.log('🤖 Trying Android Intent URL:', intentUrl)
           try {
             window.location.href = intentUrl
           } catch (e) {
+            console.log('❌ Intent URL failed:', e)
             // Intent failed, fallback will handle
           }
         }
