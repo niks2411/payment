@@ -42,6 +42,12 @@ export default function Footer() {
               <li><Link to="/contact" className="hover:text-primary-600">Contact Us</Link></li>
               <li><a href="/#faq" onClick={handleFAQClick} className="hover:text-primary-600">FAQ</a></li>
             </ul>
+            <Link 
+              to="/register" 
+              className="mt-4 inline-block px-6 py-2 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition text-sm"
+            >
+              Register
+            </Link>
           </div>
 
           {/* Further Information */}
