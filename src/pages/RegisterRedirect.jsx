@@ -22,8 +22,10 @@ export default function RegisterRedirect() {
         <img src="/logo.png" alt="ShigramPay" className="mx-auto mb-6 h-12 w-auto" />
         <h1 className="text-3xl font-semibold text-slate-900 mb-4">Opening ShigramPay</h1>
         <p className="text-slate-600 mb-6">
-          We&apos;re redirecting you to the correct app store for your device.
-          If nothing happens automatically, tap the button below.
+          {referralCode 
+            ? `Opening the app with referral code "${referralCode}". If the app is installed, it will open automatically. Otherwise, you'll be redirected to the app store.`
+            : "Opening the app. If the app is installed, it will open automatically. Otherwise, you'll be redirected to the app store."
+          }
         </p>
         {referralCode && (
           <p className="text-sm font-mono text-slate-500 mb-4">

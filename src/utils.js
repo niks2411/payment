@@ -88,25 +88,36 @@ export function getDeepLinkUrl(referralCode) {
 }
 
 export function redirectToAppOrStore(referralCode, options = {}) {
-  const { fallbackDelay = 1600 } = options
+  const { fallbackDelay = 2000 } = options
   try {
     const deepLinkUrl = getDeepLinkUrl(referralCode)
     const storeUrl = getStoreUrl(referralCode)
-    const { isIOS } = getPlatformMeta()
+    const { isIOS, isAndroid } = getPlatformMeta()
+
+    // Only attempt deep linking on mobile devices
+    if (!isIOS && !isAndroid) {
+      // Desktop - go directly to store
+      window.location.href = storeUrl
+      return
+    }
 
     let hasNavigated = false
+    let fallbackTriggered = false
+
     const markNavigated = () => {
       hasNavigated = true
     }
 
     const fallbackHandler = () => {
-      if (hasNavigated) return
-      hasNavigated = true
+      if (hasNavigated || fallbackTriggered) return
+      fallbackTriggered = true
       window.location.href = storeUrl
     }
 
+    // Set up fallback timer
     const timer = setTimeout(fallbackHandler, fallbackDelay)
 
+    // Cleanup handlers - if page hides or blurs, app likely opened
     const cleanup = () => {
       clearTimeout(timer)
       markNavigated()
@@ -115,19 +126,24 @@ export function redirectToAppOrStore(referralCode, options = {}) {
     window.addEventListener('pagehide', cleanup, { once: true })
     window.addEventListener('blur', cleanup, { once: true })
 
-    if (isIOS) {
-      window.location.href = deepLinkUrl
-    } else {
-      const iframe = document.createElement('iframe')
-      iframe.style.display = 'none'
-      iframe.src = deepLinkUrl
-      iframe.onload = cleanup
-      document.body.appendChild(iframe)
+    // Try to open the app with deep link
+    // For both iOS and Android, use direct location assignment
+    // If app is installed, it will open; if not, fallback will trigger
+    window.location.href = deepLinkUrl
+
+    // Additional Android fallback using intent URL
+    if (isAndroid) {
+      // Try Android intent URL as backup
+      const intentUrl = `intent://register${referralCode ? `?referral=${encodeURIComponent(referralCode.trim())}` : ''}#Intent;scheme=shigrampay;package=com.vnetix.shigrampay;end`
       setTimeout(() => {
-        if (iframe.parentNode) {
-          iframe.parentNode.removeChild(iframe)
+        if (!hasNavigated && !fallbackTriggered) {
+          try {
+            window.location.href = intentUrl
+          } catch (e) {
+            // Intent failed, fallback will handle
+          }
         }
-      }, fallbackDelay + 500)
+      }, 500)
     }
   } catch (error) {
     console.error('Error launching deep link, falling back to store', error)
