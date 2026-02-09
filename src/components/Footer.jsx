@@ -65,6 +65,12 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="text-base font-semibold text-slate-700 mb-3">Contact us</h4>
             <a href="mailto:support@shigrampay.com" className="text-base text-primary-600 underline break-words">support@shigrampay.com</a>
+            <p className="mt-2 text-base text-slate-600">
+              2nd Floor, 108, 27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
+            </p>
+            <a href="tel:08310061600" className="mt-1 block text-base text-slate-600 hover:text-primary-600">
+              83100 61600
+            </a>
             <div className="mt-4 flex items-center justify-center md:justify-start gap-4">
               <a href="https://www.facebook.com/ShigramPay" aria-label="Facebook">
                 <img src="/facebook.png" alt="Facebook" className="h-5 w-5 md:h-6 md:w-6" />
