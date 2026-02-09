@@ -69,7 +69,7 @@ export default function Footer() {
               2nd Floor, 108, 27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
             </p>
             <a href="tel:08310061600" className="mt-1 block text-base text-slate-600 hover:text-primary-600">
-              83100 61600
+              +91 83100 61600
             </a>
             <div className="mt-4 flex items-center justify-center md:justify-start gap-4">
               <a href="https://www.facebook.com/ShigramPay" aria-label="Facebook">
